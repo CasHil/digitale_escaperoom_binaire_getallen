@@ -1,0 +1,198 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--myColor1), var(--myColor2));
+  transition: --myColor1 0.2s ease, --myColor2 0.2s ease;
+}
+
+.victory {
+  text-align: center;
+  position: relative;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: victory-appear 1s ease;
+}
+
+@keyframes victory-appear {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.victory-title {
+  font-size: 3rem;
+  color: #4caf50;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.victory-message {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: hsl(calc(360 * var(--hue)), 100%, 50%);
+  top: 0;
+  animation: confetti-fall 3s ease-out infinite,
+    confetti-spin 3s linear infinite;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(calc(100vw - 200px));
+    opacity: 0;
+  }
+}
+
+@keyframes confetti-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.confetti-piece:nth-child(odd) {
+  background: #ff9800;
+}
+
+.confetti-piece:nth-child(even) {
+  background: #3f51b5;
+}
+
+.background1 {
+  --myColor1: #ff4e50;
+  --myColor2: #ff847c;
+}
+
+.background2 {
+  --myColor1: #ff847c;
+  --myColor2: #ffa07a;
+}
+
+.background3 {
+  --myColor1: #ffa07a;
+  --myColor2: #fdd835;
+}
+
+.background4 {
+  --myColor1: #fdd835;
+  --myColor2: #c6ff00;
+}
+
+.background5 {
+  --myColor1: #c6ff00;
+  --myColor2: #a7ffeb;
+}
+
+.background6 {
+  --myColor1: #a7ffeb;
+  --myColor2: #64ffda;
+}
+
+.background7 {
+  --myColor1: #64ffda;
+  --myColor2: #00e676;
+}
+
+.escape-room {
+  width: 90%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #0078d4;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #0078d4;
+  transition: width 0.2s ease;
+}
+
+.puzzle h2 {
+  font-size: 1.5rem;
+  color: #0078d4;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #0078d4;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+  transform: scale(1.05);
+}
