@@ -1,8 +1,36 @@
-# React + Vite
+# Digitale Escape Room: Binaire en Hexadecimale Getallen
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Deze interactieve digitale escape room laat leerlingen op een leuke manier puzzelen met binaire, decimale en hexadecimale getallen. Er zitten een timer en hints in.
 
-Currently, two official plugins are available:
+## Live Versie
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Je kunt de escape room direct spelen via de volgende link:
+[Digitale Escape Room](https://cashil.github.io/digitale_escaperoom_binaire_getallen)
+
+## Installatie
+
+1. **Kloon de repository:**
+
+   ```bash
+   git clone https://github.com/CasHil/digitale_escaperoom_binaire_getallen
+   ```
+
+2. **Navigeer naar de projectmap:**
+
+   ```bash
+   cd digitale_escaperoom_binaire_getallen
+   ```
+
+3. **Installeer de vereiste afhankelijkheden met bun (of npm, yarn, ...):**
+
+   ```bash
+   bun install
+   ```
+
+4. **Start de ontwikkelingsserver:**
+
+   ```bash
+   bun dev
+   ```
+
+5. Open je browser en navigeer naar `http://localhost:5173`.
