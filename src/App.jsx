@@ -3,7 +3,7 @@ import confetti from "canvas-confetti";
 import "./App.css";
 
 const App = () => {
-  const [timeLeft, setTimeLeft] = useState(600);
+  const [timeLeft, setTimeLeft] = useState(1200);
   const [mistakes, setMistakes] = useState(0);
   const [currentPuzzle, setCurrentPuzzle] = useState(0);
   const [isGameOver, setIsGameOver] = useState(false);
